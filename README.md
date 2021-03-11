@@ -49,7 +49,6 @@ Tools.Subsequence
                            EX: `consecl (1+2+3+4+5+6) [1..6]`   --> `True`
                                `consecl 21 [1..5]`              --> `False`
                            
-                           
     consecl             :: (Num a, Eq a) => a -> [a] -> Bool
     consecl n xs        -> Checks whether `n` is the sum of a consecutive series of elements in
                            `xs`. Begins with a list containing the first element of xs and works 
@@ -86,7 +85,8 @@ Tools.Subsequence
                            EX: `equidistant [1,30,60,90]`       --> `False`
                                `equidistant [0,20,40,60]`       --> `True`
                                
-                    
+
+
 Tools.Number
     digit               :: (Integral a, Show a) => Int -> a -> Integer
     digit n m           -> Returns the `n`th digit of `m`. 
@@ -127,7 +127,9 @@ Tools.Number
     
     isPent              :: Integral a => a -> Bool
     isPent n            -> Checks whether `n` is a pentagonal number
-    
+ 
+ 
+ 
 Tools.Logic
     both                :: (a -> Bool) -> (a -> Bool) -> a -> Bool
     both p1 p2 val      -> Checks whether `val` satisfies predicates `p1` and `p2`.                 ## Isn't this just `&&`?
